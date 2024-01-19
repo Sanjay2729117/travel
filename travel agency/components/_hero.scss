@@ -1,0 +1,167 @@
+@mixin abs {
+    position: absolute;
+    z-index: -3;
+}
+
+header {
+    position: relative;
+
+    .bg {
+        @include abs;
+        right: 0;
+    }
+
+    .plane1 {
+        @include abs;
+        left: 798px;
+        top: 201px;
+    }
+
+    .plane2 {
+        @include abs;
+        left: 1198px;
+        top: 201px;
+    }
+
+    .girl {
+        @include abs;
+        width: 665px;
+        height: 664px;
+        left: 665px;
+        top: 105px;
+        z-index: -2;
+
+    }
+
+    nav {
+        display: flex;
+        gap: 333px;
+        z-index: 3;
+
+        .logo {
+            margin-left: 140px;
+            margin-top: 48px;
+        }
+
+        ul {
+            display: flex;
+            gap: 60px;
+            list-style: none;
+            font-family: $font;
+
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: var(--1st, #212832);
+
+            .arrow {
+                margin-left: 3px;
+            }
+
+            li {
+                margin-top: 56px;
+            }
+
+            .button {
+
+                margin-top: 47px;
+                width: 102px;
+                height: 40px;
+                padding: 5px;
+                text-align: center;
+
+                border-radius: 5px;
+                border: 1px solid var(--1st, #212832);
+            }
+        }
+    }
+
+    .content {
+        position: absolute;
+        top: 150px;
+        left: 177px;
+
+        .top-tag {
+            color: $top-font-color;
+            font-family: $Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        .decor {
+            @include abs;
+            top: 100px;
+            left: 223px;
+        }
+
+        .text {
+            color: var(--1st, #181E4B);
+            font-family: Volkhov;
+            font-size: 84px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 89px;
+            /* 105.952% */
+            letter-spacing: -3.36px;
+        }
+
+        .text2 {
+            color: #5E6282;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+            /* 187.5% */
+            width: 477px;
+            margin-top: 30px;
+        }
+
+        .but {
+            display: flex;
+            gap: 44px;
+        }
+
+        .svgbut {
+            margin-top: 25px;
+        }
+
+        .play {
+            display: flex;
+
+        }
+
+        .div {
+
+            margin-top: 55px;
+            color: var(--text-color, #686D77);
+            font-family: Poppins;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .button {
+            text-align: center;
+            padding: 20px;
+            margin-top: 34px;
+            color: var(--white, #FFF);
+            width: 170px;
+            height: 60px;
+            text-align: center;
+            font-family: $font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 10px;
+            background: var(--yellow, #F1A501);
+            box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+        }
+    }
+}

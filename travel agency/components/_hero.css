@@ -1,0 +1,16 @@
+header nav {
+  display: flex;
+  gap: 222px;
+}
+
+header nav .logo {
+  margin-left: 140px;
+  margin-top: 48px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 55px;
+  list-style: none;
+  margin-top: 56px;
+}
